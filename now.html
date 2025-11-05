@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styhles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet">
+</head>
+
+<style>
+  body {
+    font-family: "Sono", sans-serif;
+    background-color:rgb(248, 243, 237);
+    margin: 80px 0 0 0;
+    align-items: center;
+    height: 290vh;
+    min-width: 
+  }
+
+  .budget-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+  }
+
+  .budget-plan {
+    background-color: rgb(243, 209, 243);
+    max-width: 450px;
+    height: 350px;
+
+  }
+
+  .budget-plan:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  p{
+    text-align: center;
+    font-size: 30px;
+    font-weight:900;
+    padding-top: 20px;
+  }
+
+  h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 18px;
+    line-height: 40px;
+    margin:  0 20px 0 0;
+    
+  }
+
+  .budget-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 25px;
+  }
+
+button {
+  background-color: rgb(41, 2, 36);
+  color: #ffffff;
+  padding: 5px 20px 5px 20px;
+  border: none;
+  border-radius: 9px;
+}
+
+button:hover {
+  background-color: rgb(92, 6, 83);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+@media (max-width: 900px) {
+      .budget-container {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+      }
+
+    }
+
+
+</style>
+
+<body>
+  <div class="budget-container">
+    <div class="budget-plan">
+      <div class="budget-title"><p>Basic</p></div>
+      <div class="budget-pricing"><h4>$33.99/month</h4></div>
+      <div class="budget-spec">
+        <uL>
+          <li>&#9989; 15GB storage</li>
+          <li>&#9989; 1 user</li>
+          <li>&#128683; support</li>
+        </uL>
+
+      </div>
+      <div class="budget-button">
+        <div class="budget-btn"><button>Subscribe</button></div>
+
+      </div>
+
+    </div>
+
+
+    <div class="budget-plan">
+      <div class="budget-title"><p>Standard</p></div>
+      <div class="budget-pricing"><h4>$74.99/month</h4></div>
+      <div class="budget-spec">
+        <uL>
+          <li>&#9989; 45GB storage</li>
+          <li>&#9989; 2 user</li>
+          <li>&#128683; support</li>
+        </uL>
+
+      </div>
+      <div class="budget-button">
+        <div class="budget-btn"><button>Subscribe</button></div>
+
+      </div>
+
+    </div>
+
+
+    <div class="budget-plan">
+      <div class="budget-title"><p>Premium</p></div>
+      <div class="budget-pricing"><h4>$133.99/month</h4></div>
+      <div class="budget-spec">
+        <uL>
+          <li>&#9989; 75GB storage</li>
+          <li>&#9989; 5 user</li>
+          <li>&#128683; support</li>
+        </uL>
+
+      </div>
+      <div class="budget-button">
+        <div class="budget-btn"><button>Subscribe</button></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
+</body>
+</html>
